@@ -1,0 +1,406 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    width: 90%;
+    position: relative;
+    
+    margin: 0 auto;
+}
+
+/* Start Header-------------------------------- */
+
+header {
+    display: flex;
+    top: 0;
+    right: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
+    position: fixed;
+    border-bottom: 1px solid rgb(0, 255, 76);
+    z-index: 20;
+}
+
+.header-left {}
+
+.header-left img {
+    height: 70px;
+}
+
+.header-center {
+    margin: auto 9px;
+    display: flex;
+}
+
+
+/* Menu dieu huong-------------------------------------------------------- */
+
+.header-center>ul>li {
+    position: relative;
+}
+
+.header-center ul ul {
+    position: absolute;
+    display: none;
+    padding: 0;
+    margin: 0 0 0 20px;
+    list-style: none;
+    border-radius: 3px;
+    width: 185px;
+    background-color: #fff;
+    box-shadow: 0 0 1px gray;
+}
+
+.header-center ul ul a {
+    display: block;
+    line-height: 30px;
+    color: rgb(0, 255, 76);
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    padding: 0 0px;
+
+}
+
+.header-center>ul>li:hover>ul {
+    display: block;
+}
+
+.header-center ul li {
+    list-style: none;
+}
+
+.header-center ul ul a:hover {}
+
+/* End menu dieu huong ----------------------------------------------------*/
+
+.header-center a {
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.header-center a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.header-right {
+    margin: auto 9px;
+}
+
+.header-right a {
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    color: #000;
+    font-size: 25px;
+}
+
+.header-right a:hover {
+    color: rgb(0, 255, 76);
+
+}
+
+/* End header */
+
+/* -------------------------------------------------------- */
+form{
+    position: absolute  ;
+    background-color: #edeae6;
+    width: 50%;
+    height: 350px;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.thong-tin{
+    width: 85%;
+    
+    position: absolute;
+    height: 90%;
+    transform: translate(-50%);
+    left: 50%;
+    top: 20px;
+}
+
+.ho-ten input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 20px 0 10px 0;
+}
+
+.email input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 20px 0 10px 0;
+}
+
+.infor input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 0px 0 10px 0;
+}
+
+
+
+
+
+.tab{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.tab>.clgreen{
+    color: rgb(0, 255, 76);
+}
+
+.tab a{
+    padding: 10px 40px;
+    text-decoration: none;
+    background-color: white;
+    margin: 0 40px;
+    border-radius: 10px;
+    font-weight:600;
+    font-family: sans-serif;
+    color: #000;
+}
+
+.tab a:hover{
+    color: rgb(27, 255, 50);
+}
+
+.dk{
+    float: right;
+}
+
+.dk button{
+    padding: 10px 50px;
+    position: relative;
+    bottom: 22px;
+    border-radius: 20px;
+    background-color: #22b24c;
+    color: #fff;
+    border: none;
+}
+
+.dk button:hover{
+    background-color: #fff;
+    color: #22b24c;
+    
+}
+
+/* Start Footer */
+footer {
+    display: flex;
+    margin-top: 100px;
+    width: auto;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 500px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.footer-1 {
+    flex: 1;
+}
+
+.footer-1 li {
+    padding: 0 0 10px 0;
+}
+
+
+
+.footer-1>ul>li>a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+.footer-1 li {
+    list-style-type: none;
+}
+
+.ft1-sub {
+    padding-top: 10px;
+}
+
+.footer-2 {
+    flex: 1;
+}
+
+.ft2-sub{
+    padding-top: 10px;
+}
+
+.footer-2>ul>li>a{
+    font-size: 20px;
+}
+
+.footer-2 ul li{
+    padding-bottom: 10px;
+}
+
+.footer-2>ul>li>a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.footer-2 li {
+    list-style-type: none;
+}
+
+.footer-2 p{
+    font-size: 20px;
+}
+
+.footer-2 img{
+    padding: 20px 0 0 0;
+}
+
+img.chungnhan-2 {
+    width: 96%;
+}
+
+.footer-3 {
+    flex: 2;
+}
+
+.ft3-km{
+    width: 80%;
+    height: 100px;
+    background-color: #f1f1f1;
+    padding: 15px 0 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.ft3-km label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.ft3-nav>li>p{
+    padding: 10px 0 10px 0;
+}
+
+.ft3-nav>li {
+    list-style-type: none;
+}
+
+.input-ft3 input{
+    height: 35px;
+    width: 80%;
+    text-align: center;
+}
+
+.input-ft3-btn button{
+    height: 35px;
+    width: 50px;
+    background-color: #438223;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.diachi-sub li{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+.diachi-sub li::before {
+    content: "•";
+    color: rgb(0, 255, 76);
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.mxh li {
+    list-style-type: none;
+}
+
+ul.mxh{
+    margin-top: 20px;
+}
+
+.mxh li p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mxh li ul{
+    margin-top: 5px;
+}
+
+.mxh li ul li a{
+    font-size: 30px;
+    margin: 0 10px 0 0;
+}
+
+.mxh li ul li {
+    display: inline-block;
+}
+
+ul.pay{
+    margin-top: 20px;   
+}
+
+.pay li p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pay li ul li {
+    display: inline-block;
+}
+
+.pay li {
+    list-style-type: none;
+}
+
+.pay li ul img{
+    margin: 0 10px 0 0;
+}
+
+img.visa-icon {
+    max-width: 61px;
+}
+
+
+
+
+
+.chat-icon img {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}

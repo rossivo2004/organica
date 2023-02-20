@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Asset/Icon/themify-icons-font/themify-icons/themify-icons.css">
+    <title>Organica</title>
+</head>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+       .container {
+        
+
+
+        margin: 0 auto;
+    }
+
+header {
+    display: flex;
+    top: 0;
+    right: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
+    position: fixed;
+    border-bottom: 2px solid rgb(0, 255, 76);
+    z-index: 20;
+}
+
+.header-left {}
+
+.header-left img {
+    height: 70px;
+}
+
+.header-center {
+    margin: auto 9px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Menu dieu huong-------------------------------------------------------- */
+
+.header-center>ul>li {
+    position: relative;
+}
+
+.header-center ul ul {
+    position: absolute;
+    display: none;
+    padding: 0;
+    margin: 0 0 0 20px;
+    list-style: none;
+    border-radius: 3px;
+    width: 185px;
+    background-color: #fff;
+    box-shadow: 0 0 1px gray;
+    height: 300px;
+    width: 300px;
+}
+
+.header-center ul ul a {
+    display: block;
+    line-height: 30px;
+    color: rgb(0, 255, 76);
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    padding: 5px 0px;
+
+}
+
+.header-center>ul>li:hover>ul {
+    display: block;
+}
+
+.header-center ul li {
+    list-style: none;
+}
+
+.header-center ul ul a:hover {}
+
+/* End menu dieu huong ----------------------------------------------------*/
+
+.header-center a {
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.header-center a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.header-right {
+    margin: auto 9px;
+}
+
+.header-right a {
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    color: #000;
+    font-size: 25px;
+}
+
+.header-right a:hover {
+    color: rgb(0, 255, 76);
+
+}
+
+
+.ml20{
+    margin-left: -20px;
+}
+
+.ml20plus{
+    margin-left: 20px;
+}
+
+.bckem{
+    background-color: #f9f8f4;
+    padding: 20px 0;
+}
+
+.banner{
+    position: relative;
+    top: 80px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.text-banner{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    font-size: 16px;
+    padding: 15px 15px;
+    background-color: rgba(221, 221, 221, 0.6);
+    margin-left: 10px;
+}
+
+.infor-location-main{
+    position: relative;
+    top: 150px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.infor-location-sup{
+    display: flex;
+    margin: 60px 0;
+    align-items: center;
+}
+
+.infor-location-sup p{
+    margin: 10px 0;
+}
+
+.infor-location-sup a{
+    text-decoration: none;
+    color: rgb(34, 178, 76);
+    border-bottom: 1px solid rgb(34, 178, 76);
+    margin-top: 20px;
+}
+
+.infor-location-sup button{
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 255, 76);
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.infor-location-sup button:hover{
+    background-color: rgb(34, 178, 76);
+    color: #fff;
+    border:1px solid rgb(34, 178, 76);
+}
+
+.infor-location-main .sup-left,.sup-right{
+    width: 50%;
+    float: left;
+}
+
+.infor-location-sup .sup-right,.sup-left{
+   width: 50%;
+    float: left;
+}
+
+.sup-left img{
+    width: 100%;
+}
+
+.sup-right img{
+    width: 80%;
+}
+
+/* --------------------------------------------Fotter------------------------------------ */
+footer {
+    display: flex;
+    
+    margin: 300px auto 0 auto;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.footer-1 {
+    flex: 1;
+}
+
+.footer-1 li {
+    padding: 0 0 10px 0;
+}
+
+
+
+.footer-1>ul>li>a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+.footer-1 li {
+    list-style-type: none;
+}
+
+.ft1-sub {
+    padding-top: 10px;
+}
+
+.footer-2 {
+    flex: 1;
+}
+
+.ft2-sub{
+    padding-top: 10px;
+}
+
+.footer-2>ul>li>a{
+    font-size: 20px;
+}
+
+.footer-2 ul li{
+    padding-bottom: 10px;
+}
+
+.footer-2>ul>li>a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.footer-2 li {
+    list-style-type: none;
+}
+
+.footer-2 p{
+    font-size: 20px;
+}
+
+.footer-2 img{
+    padding: 20px 0 0 0;
+}
+
+img.chungnhan-2 {
+    width: 90%;
+}
+
+.footer-3 {
+    flex: 2;
+}
+
+.ft3-km{
+    width: 80%;
+    height: 100px;
+    background-color: #f1f1f1;
+    padding: 15px 0 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.ft3-km label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.ft3-nav>li>p{
+    padding: 10px 0 10px 0;
+}
+
+.ft3-nav>li {
+    list-style-type: none;
+}
+
+.ft3-nav a{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-ft3 input{
+    height: 35px;
+    width: 80%;
+    text-align: center;
+}
+
+.input-ft3-btn button{
+    height: 35px;
+    width: 50px;
+    background-color: #438223;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.diachi-sub li{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+.diachi-sub li::before {
+    content: "•";
+    color: rgb(0, 255, 76);
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.mxh li {
+    list-style-type: none;
+}
+
+ul.mxh{
+    margin-top: 20px;
+}
+
+.mxh li p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mxh li ul{
+    margin-top: 10px;
+}
+
+.mxh li ul li a{
+    font-size: 30px;
+    margin: 0 10px 0 0;
+}
+
+.mxh li ul li {
+    display: inline-block;
+}
+
+ul.pay{
+    margin-top: 20px;   
+}
+
+.pay li p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pay li ul li {
+    display: inline-block;
+}
+
+.pay li {
+    list-style-type: none;
+}
+
+.pay li ul img{
+    margin: 0 10px 0 0;
+}
+
+img.visa-icon {
+    max-width: 61px;
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <a href="../index.html"><img src="../Asset/Img/bcc.png"
+                        alt=""></a>
+            </div>
+
+            <div class="header-center">
+                <ul>
+                    <li class="ml20"><a href="#">Sản phẩm</a>
+                        <ul>
+                            <li><a href="">Trái cây</a></li>
+                            <li><a href="">Rau củ</a></li>
+                            <li><a href="">Thịt & hải sản</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="#">Khuyến mãi</a>
+                <a href="#">Combo</a>
+                <a href="#">Cửa hàng</a>
+            </div>
+
+            <div class="header-right">
+                <a href=""><i class="search-btn ti-search"></i></a>
+                <a href="../Login/login.html"><i class="login-btn ti-user"></i></a>
+                <a href="../Login/market.html"><i class="shopping-btn ti-shopping-cart"></i></a>
+            </div>
+        </header>
+
+        <div class="banner">
+            <img src="../Asset/Img/location.jpg" alt="">
+            <div class="text-banner">
+                <h1>Tìm cửa hàng</h1>
+            </div>
+        </div>
+
+        <div class="infor-location-main">
+            <div class="infor-location-sup">
+                <div class="sup-left"><img src="../Asset/Img/location-infor1.jpg" alt=""></div>
+                <div class="sup-right ml20plus">
+                    <h1>Organica Võ Thị Sáu</h1>
+                    <p>130 Nguyễn Đình Chiểu, Phường Võ Thị Sáu, Quận 3 <br>
+                        Tel: 028 6673 3350 | 0902 686 292 <br>
+                        Giờ mở cửa: 7:30 - 19:30
+                    </p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=10.7840462,106.6947907" target="_blank"><i class="ti-location-pin"></i> Xem bản đồ đến cửa hàng</a><br>
+                    <button>Xem hàng và đặt online</button>
+                    
+                </div>
+            </div>
+
+            <div class="infor-location-sup bckem">
+                <div class="sup-left ml20plus"><h1>Organica Võ Thị Sáu</h1>
+                    <p>130 Nguyễn Đình Chiểu, Phường Võ Thị Sáu, Quận 3 <br>
+                        Tel: 028 6673 3350 | 0902 686 292 <br>
+                        Giờ mở cửa: 7:30 - 19:30
+                    </p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=10.7840462,106.6947907" target="_blank"><i class="ti-location-pin"></i> Xem bản đồ đến cửa hàng</a><br>
+                    <button>Xem hàng và đặt online</button></div>
+                <div class="sup-right"><img src="../Asset/Img/location-infor2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="infor-location-sup">
+                <div class="sup-left"><img src="../Asset/Img/location-infor3.jpg" alt=""></div>
+                <div class="sup-right ml20plus">
+                    <h1>Organica Võ Thị Sáu</h1>
+                    <p>130 Nguyễn Đình Chiểu, Phường Võ Thị Sáu, Quận 3 <br>
+                        Tel: 028 6673 3350 | 0902 686 292 <br>
+                        Giờ mở cửa: 7:30 - 19:30
+                    </p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=10.7840462,106.6947907" target="_blank"><i class="ti-location-pin"></i> Xem bản đồ đến cửa hàng</a><br>
+                    <button>Xem hàng và đặt online</button>
+                    
+                </div>
+            </div>
+
+            <div class="infor-location-sup bckem">
+                <div class="sup-left ml20plus"><h1>Organica Võ Thị Sáu</h1>
+                    <p>130 Nguyễn Đình Chiểu, Phường Võ Thị Sáu, Quận 3 <br>
+                        Tel: 028 6673 3350 | 0902 686 292 <br>
+                        Giờ mở cửa: 7:30 - 19:30
+                    </p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=10.7840462,106.6947907" target="_blank"><i class="ti-location-pin"></i> Xem bản đồ đến cửa hàng</a><br>
+                    <button>Xem hàng và đặt online</button>
+                    </div>
+                <div class="sup-right">
+                    <img src="../Asset/Img/location-infor4.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-------------------------------------------- Fotter------------------------------------------- -->
+        <footer>
+            <div class="footer-1">
+                <ul>
+                    <li><a href="#"><p>Trang chủ</p></a></li>
+                    <li><a href="#"><p>Khuyến mãi</p></a></li>
+                    <li><a href="#"><p>Sản phẩm</p></a>
+                        <ul class="ft1-sub">
+                            <li><a href="#">Rau củ</a></li>
+                            <li><a href="#">Trái cây</a></li>
+                            <li><a href="#">Thịt & hải sản</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-2">
+                <ul>
+                    <li><a href="#"><p>Về OganicShop</p> </a>
+                        <ul class="ft2-sub">
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Tầm nhìn & sứ mệnh</a></li>
+                            <li><a href="#">Trang trại hữu cơ</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+
+                <p><b>Chứng nhận</b></p>
+                <img src="../Asset/Img/chungnhan1-removebg-preview.png" alt="">
+                <img class="chungnhan-2" src="../Asset/Img/chungnhan2-removebg-preview.png" alt="">
+            </div>
+
+            <div class="footer-3">
+                <div class="ft3-km">
+                    <label for="">Đăng ký nhận thông tin khuyến mãi</label>
+                    <div class="input-ft3">
+                        <input type="text" name="email" value placeholder="Nhập email nhận thông tin khuyến mãi">
+                        <span class="input-ft3-btn">
+                            <button type="submit">Gửi</button>
+                        </span>
+                    </div>
+                </div>
+
+                <ul class="ft3-nav">
+                    <li>
+                        <p>CỬA HÀNG TẠI TP.HỒ CHÍ MINH</p>
+                        <ul class="diachi-sub">
+                            <li>130 Nguyễn Đình Chiểu, Phường Võ Thị Sáu, Quận 3, TP.Hồ Chí Minh</li>
+                            <li>54 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP.Hồ Chí Minh</li>
+                            <li>24 Nguyễn Quý Đức, Phường An Phú, TP.Thủ Đức, TP.Hồ Chí Minh</li>
+                            <li>T212 đường số 7, phường An Phú, Thủ Đức, TP.Hồ Chí Minh</li>
+                        </ul>
+                        <a href=""><i class="location ti-location-pin"></i> Tìm kiếm cửa hàng</a>
+                    </li>
+                </ul>
+
+                <ul class="mxh">
+                    <li><p>Liên kết mạng xã hội</p>
+                    <ul>
+                        <li><a href=""><i class="youtube-btn ti-youtube"></i></a></li>
+                        <li><a href="https://www.facebook.com/rossivo2004"><i class="facabook-btn ti-facebook"></i></a></li>
+                        <li><a href=""><i class="google-btn ti-google"></i></a></li>
+                    </ul>
+                    </li>
+                </ul>
+
+                <ul class="pay">
+                    <li><p>Phương thức thanh toán</p>
+                    <ul class="mt10">
+                        <li><img src="../Asset/Img/pay/zalo.png" alt=""></li>
+                        <li><img src="../Asset/Img/pay/momo.png" alt=""></li>
+                        <li><img class="visa-icon" src="../Asset/Img/pay/visa-removebg-preview.png" alt=""></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+            
+
+        </footer>
+    </div>
+</body>
+</html>
